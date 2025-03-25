@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandru | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0f1420;
+            --bg-secondary: #1a2238;
+            --accent-primary: #4ecdc4;
+            --accent-secondary: #45b7d1;
+            --text-primary: #ffffff;
+            --text-secondary: #c0c6dc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 4rem;
+            background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .header-content h2 {
+            font-size: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .section {
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-primary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding-top: 2rem;
+        }
+
+        .skill-card {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: auto;
+                padding: 3rem 0;
+            }
+            .header-content h1 {
+                font-size: 3rem;
+            }
+            .header-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="header-content">
+            <h1>Chandru</h1>
+            <h2>Full Stack Developer | Software Engineer</h2>
+        </div>
+    </header>
+
+    <section id="about" class="section container">
+        <h2>About Me</h2>
+        <p>
+            Passionate full-stack developer with expertise in modern web technologies,
+            system architecture, and scalable solutions.
+        </p>
+    </section>
+
+    <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><h3>Java</h3></div>
+            <div class="skill-card"><h3>Spring Boot</h3></div>
+            <div class="skill-card"><h3>React</h3></div>
+            <div class="skill-card"><h3>Linux</h3></div>
+            <div class="skill-card"><h3>JavaScript</h3></div>
+            <div class="skill-card"><h3>HTML & CSS</h3></div>
+            <div class="skill-card"><h3>Python</h3></div>
+            <div class="skill-card"><h3>SQL</h3></div>
+        </div>
+    </section>
+</body>
+</html>
